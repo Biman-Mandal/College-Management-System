@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+
+@charset "utf-8";
+
+
+
+.image-c{
+  position: relative;
+  z-index: -1;
+  top: 0px;
+}
+.image-c .image{
+  
+  width: 100%;
+  max-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/*
+Slider Animation
+
+
+*/
+.Banner_0{
+	
+    
+    position: relative;
+    top: 0px;
+    z-index: -1;
+	font-family: sans-serif;
+	
+}
+.Banner_0 img{
+  position: absolute;
+  width: 120%;
+  max-height: 670px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.banner1,.banner2,.banner3,.banner4{
+	height: 25.4vh;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.photos{
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+    animation: zoom-out 10s linear infinite
+}
+@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}
+}
+.text-box{
+	width: 650px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	color: white;
+	animation: textup 40s linear infinite;
+	transform: translateY(350px);
+}
+.text-boxx{
+	width: 650px;
+	position: absolute;
+	top: 250px;
+	left: 150px;
+	color: white;
+	animation: textup 40s linear infinite;
+	transform: translateX(520px);
+}
+.text-box h1{
+   margin-bottom: 40px;
+   
+}
+.text-boxx p{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 80px;
+
+}
+.text-box span{
+	background: red;
+	height: 4px;
+	width: 175px;
+	position: absolute;
+	left: 0;
+	color: red;
+
+}
+.banner1{
+	animation: slide1 40s linear infinite;
+}
+.banner2{
+	animation: slide2 40s linear infinite;
+}
+
+.banner3{
+	animation: slide3 40s linear infinite;
+}
+.banner4{
+	animation: slide4 40s linear infinite;
+}
+@keyframes slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+
+
+@keyframes textup{
+	10%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.text-box1{
+	animation-delay: 0s; 
+}
+.text-boxx1{
+	animation-delay: 0s; 
+}
+.text-box2{
+	animation-delay: 10s; 
+}
+.text-boxx2{
+	animation-delay: 10s; 
+}
+.text-box3{
+	animation-delay: 20s; 
+}
+.text-box4{
+	animation-delay: 30s; 
+}
+.text-boxx3{
+	animation-delay: 20s; 
+}
+.text-boxx4{
+	animation-delay: 30s; 
+}
+
+
+.Techno_H1{
+	font-family: 'Merriweather Sans', sans-serif;
+    font-size: 40px;
+    background-color: rgba(17,17,17,0.6);
+    padding: 15px 40px;
+    border-radius: 999px;
+    text-align: center;
+}
+.techno_p1{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+	background-color: rgba(17,17,17,0.6);
+	padding: 25px 65px;
+	border-radius: 999px;
+	text-align: center;
+}
+
+
+.features{
+
+  
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 45.5%;
+  margin-right: 40.7%;
+  border: 2px solid black;
+
+  border-left: hidden;
+  border-top: hidden;
+  border-right: hidden;
+
+}
+.Featuress{
+	font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+    float: right;
+    margin-top: -38px;
+    margin-right: 41%;
+    font-weight: bold;
+    color: red;
+}
+
+/*
+
+Top Features
+
+
+/**/
+.containerr{
+  text-align: center;
+ float: left;
+  margin-left: 26.5%;
+  margin-top: 5%;
+}
+.bottomm{
+  border: 1px solid #EA0505;
+  background: none;
+  padding: 30px 28px;
+  font-size: 15px;
+  font-weight: bold;
+  
+  font-family: 'Merriweather Sans', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.bottomm::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #8360c3;  
+  background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  
+  z-index: -1;
+  transition: 0.8s;
+}
+.bottomm1::before,.bottomm3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.bottomm1:hover::before,.bottomm2:hover::before{
+  height: 180%;
+}
+
+/* 2nd */
+
+
+.contain{
+  text-align: center;
+ float: left;
+  
+  margin-top: 5%;
+}
+.bott{
+  border: 1px solid #EA0505;
+  background: none;
+  padding: 30px 10px;
+  font-size: 15px;
+  font-weight: bold;
+
+ font-family: 'Merriweather Sans', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.bott::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #00467F;  
+  background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  
+  background: linear-gradient(to right, #A5CC82, #00467F);
+
+
+  
+  z-index: -1;
+  transition: 0.8s;
+}
+.bott1::before,.bott3::before{
+  bottom:  0;
+  border-radius: 50% 50% 0 0;
+}
+.bottomm2::before,.bottomm4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.bottomm3::before,.bottomm4::before{
+  height: 180%;
+}
+.bott1:hover::before,.bott2:hover::before{
+  height: 180%;
+}
+.bottomm3:hover::before,.bottomm4:hover::before{
+  height: 0%;
+}
+.contain1{
+  text-align: center;
+  float: left;
+  
+  margin-top: 5%;
+}
+.bottt{
+  border: 1px solid #EA0505;
+  background: none;
+  padding: 30px 33px;
+   font-size: 15px;
+  font-weight: bold;
+  
+ font-family: 'Merriweather Sans', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.bottt::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #00467F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  
+  z-index: -1;
+  transition: 0.8s;
+}
+.bott11::before,.bott3::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0 ;
+}
+.bottomm2::before,.bottomm4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.bottomm3::before,.bottomm4::before{
+  height: 180%;
+}
+.bott11:hover::before,.bott2:hover::before{
+  height: 180%;
+}
+.bottomm3:hover::before,.bottomm4:hover::before{
+  height: 0%;
+}
+.contain11{
+  text-align: center;
+  float: left;
+  position: relative;
+  
+  margin-top: 5%;
+}
+.botttt{
+  border: 1px solid #EA0505;
+  background: none;
+  padding: 30px 15px;
+   font-size: 15px;
+  font-weight: bold;
+
+ font-family: 'Merriweather Sans', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+.botttt::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  
+  z-index: -1;
+  transition: 0.8s;
+}
+.bott111::before,.bott3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.bottomm2::before,.bottomm4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.bottomm3::before,.bottomm4::before{
+  height: 180%;
+}
+.bott111:hover::before,.bott2:hover::before{
+  height: 180%;
+}
+.bottomm3:hover::before,.bottomm4:hover::before{
+  height: 0%;
+}
+
+

@@ -1,0 +1,147 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+.DatabaseLoginCross{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 14px 14px;
+	color: white;
+	background: black;
+	border-radius: 7px;
+	cursor: pointer;
+}
+#DatabaseLoginPopup{
+	font-family: 'Merriweather Sans', sans-serif;
+	display:none;
+    position: fixed;
+    z-index: 96;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+.innerDatabaseLoginPopup{
+	background-color: #fefefe;
+    margin: 8% auto auto;
+    border: 1px solid #888;
+    width: 400px;
+	height: 350px;
+	padding-bottom: 30px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.innerDatabaseLoginPopup .TopDiv{
+	position: absolute;
+	top: 15px;
+}
+.innerDatabaseLoginPopup .TopDiv h2{
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: black;
+	font-weight: 900;
+	text-shadow: 0px 2px 5px #A2A2A2, 
+               0px 2px 2px #fff;
+               position: relative;
+}
+.innerDatabaseLoginPopup .TopDiv h2::after{
+	position: absolute;
+	content: '';
+	background: linear-gradient(to right,#A2A2A2 ,white);
+	width: 45px;
+	height: 4px;
+	border-radius: 10px;
+	top: 30px;
+	left: 25px;
+}
+.innerDatabaseLoginPopup .TopDiv p{
+	margin-top: 8px;
+	font-weight: bold;
+	font-size: 13px;
+	color:  #5C5C5C;
+	letter-spacing: 1px;
+}
+.innerDatabaseLoginPopup .MiddleDiv{
+	position: absolute;
+	top: 100px
+}
+.MiddleDiv .MiddleDivInput{
+	position: relative;
+	padding: 15px;
+}
+.MiddleDiv .MiddleDivInput input{
+	padding: 12px 40px ;
+} 
+.MiddleDivInput .label1{
+	position: absolute;
+	left: 0;
+	padding: 13px;
+	background: black;
+	color: white
+}
+.MiddleDivInput .label2{
+	transition: .3s;
+	position: absolute;
+	left: 45px;
+	top: 26px;
+	letter-spacing: 1px;
+}
+.MiddleDiv .MiddleDivInput input:focus ~ .label2,
+.MiddleDiv .MiddleDivInput input:valid ~ .label2{
+	top: -7px;
+	left: 0px;
+	color: #03a9f4   ;
+}
+.MiddleDiv .ThirdDiv{
+	
+
+}
+.MiddleDiv .ThirdDiv input[type="submit"]{
+	position: absolute;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: black;
+	padding: 8px 16px;
+	border-radius: 8px;
+	font-size: 15px;
+	cursor: pointer;
+	left: 0;
+	bottom: -42px;
+	
+}
+.MiddleDiv .ThirdDiv input[type="submit"]:hover{
+	opacity: .9;
+} 
+
+.animate {
+    animation: zoom .3s;
+}
+@keyframes zoom {
+    from {
+    	height: 0px;
+    	width: 0px;
+    } 
+    to {
+    	height:  350px;
+    	width: 400px;
+    }
+}
+@media(max-width: 500px){
+	.innerDatabaseLoginPopup{
+		width: 350px;
+	}
+}
+

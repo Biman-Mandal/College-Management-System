@@ -1,0 +1,164 @@
+.ProfileSection{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-top: 40px;
+}
+.upperdiv{
+	
+}
+.SuccessMSG{
+	font-size: 9px;
+	position: absolute;
+	top: -38px;
+	background: black;
+	color: white;
+	letter-spacing: 1.5px;
+	padding: 5px 30px;
+	border-radius: 6px;
+	border-left: 10px solid red;
+	border-right: 10px solid red;
+}
+.ProfileSection .upperdiv{
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 40%;
+	height: 80vh;
+	align-items: center;
+}
+/*
+-moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   */
+.ProfileSection .upperdiv .innerdiv{
+	position: absolute;
+	background: #38B8CF ;
+	width: 100vh;
+	height: 55vh;
+	transform: rotate(45deg);
+}
+.profileDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.ProfileInnerDiv{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;	
+	align-items:  center;
+}
+.ProfileImgDiv{
+	position: absolute;
+	top: 10px;
+
+}
+.ProfileImgDiv img{
+	width: 130px;
+	height: 110px;
+	border-radius: 200%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ProfileNameDiv{
+	position: absolute;
+	top: 135px;
+}
+.ProfileNameDiv h2{
+	color: white;
+	font-weight: 900;
+	letter-spacing: 1px;
+	position: relative;
+	text-shadow: 0px 1px 2px black;
+}
+
+.ProfileDetail{
+	position: absolute;
+	top: 190px;
+}
+.innerProfileDetail{
+	position: relative;
+}
+.Input{
+	color: black;
+	height: 25px;
+	text-align: center;
+	border-radius: 5px;
+	background: white;
+	outline: none;
+	border: none;
+	width: 200px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.ProfileDetail .labelIcon{
+	position: absolute;
+	top: 2px;
+	left: -80px;
+
+}
+.ProfileDetail .labelIcon i{
+	color: black;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.7);
+}
+.labelIcon label{
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.7);
+}
+.innerProfileDetail1{
+	position: relative;
+	top: 15px;
+}
+.innerProfileDetail2{
+	position: relative;
+	top: 30px;
+}
+.innerProfileDetail3{
+	position: relative;
+	top: 45px;
+}
+.innerProfileDetail4{
+	position: relative;
+	top: 60px;
+}
+.innerProfileDetail5{
+	position: relative;
+	top: 90px;
+	left: -80px;
+}
+.innerProfileDetail6{
+	position: relative;
+	top: 75px;
+}
+.innerProfileDetail5 input{
+	/*background: transparent;*/
+	border: none;
+	background: skyblue;
+	width: 75px;
+	height: 35px;
+	border-radius: 6px;
+	color: black;
+	letter-spacing: 1px; 
+	font-size: 15px;
+	/*border-bottom: 2px solid blue;*/
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+	cursor: pointer;
+	/*letter-spacing: .5px;*/
+	font-weight: bold;
+	transition: .1s ease;
+	outline: none;
+	/*box-shadow: 0px 2px 4px black;*/
+}
+.innerProfileDetail5 input:focus,
+.innerProfileDetail5 input:hover{
+	/*opacity: .9;*/
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}

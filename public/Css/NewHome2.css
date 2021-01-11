@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+.section5{
+	width: 100%;
+	height: 950px;
+	background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.section5 .inner_section4
+{
+	align-items: flex-start;
+	width: 100%;
+	height: 950px;
+	background-color: white;
+
+}
+.innerContent{
+	margin-top:5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 6vh;
+}
+.innerContent h1{
+	font-size: 70px;
+    font-weight: 700;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px #000, 
+               1px 3px 3px rgba(0, 0, 0, 0.8); 
+}
+.innerContent p{
+	color: #B0B0B0;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.features-container {
+	background-color: white ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width:100%;
+	height: 600px;
+}
+.features-container  > .FeaturesContent-div1{
+	background-color: rgba(0, 0, 0, 0.04);
+	width: 340px;
+	height: 300px;
+	margin: 40px 20px 0px 0px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+.FeaturesContent-div1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.FeaturesContent-div1:hover{
+	box-shadow: 0px 0px 0px #000, 
+               0px 0px 3px rgba(0, 0, 0, 0.6); 
+    cursor: pointer;
+}
+.FeatutresIcon{
+  background-color:  #32ADE7;
+  color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 33px;
+  transition: 0.4s;
+  margin-top: 15px;
+
+}
+.FeatutresText h3{
+	font-size: 32px;
+	color: black;
+	font-weight: bold;
+	text-shadow:  1px 1px 1px #000, 
+               0px 1px 1px rgba(0, 0, 0, 0.1); 
+
+}
+.FeatutresText p{
+	font-size: 11px;
+	color: #9A9A9A;
+    letter-spacing: 2px;
+}
+.Online_Addmission .FeatutresIcon{
+	  margin-left: 74px;
+}
+.Student_Portal .FeatutresIcon{
+	  margin-left: 84px;
+}
+.Database_Manage .FeatutresIcon{
+	  margin-left: 70px;
+}
+.Generate_Id .FeatutresIcon{
+	  margin-left: 38px;
+}
+.Semester_Result .FeatutresIcon{
+	  margin-left: 69px;
+}
+.FeatutresIcon:hover{
+	opacity: 0.9;
+	background-color: #458FE7;
+}
+.FeatutresIcon .fa{
+	margin-top: 25px;
+}
+
+@media(max-width: 1079px)
+{
+	.section5{
+		width: 100%;
+	    height: 1300px;
+	}
+	.section5 .inner_section4
+{
+	height: 1250px;
+
+}
+
+}
+@media(max-width: 730px)
+{
+	.section5{
+	    height: 2000px;
+	}
+	.section5 .inner_section4
+{
+	height: 1950px;
+
+}
+
+}
+
+.section6{
+	width: 100%;
+	height: 700px;
+	background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.section6 .innerSection6
+{
+	align-items: center;
+	width: 100%;
+	height: 600px;
+}
+.innerSection6 .OurDevoloper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.innerSection6 .DevoloperDetail{
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+	height: 400px;
+}
+.DevoloperDetail .devoloper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: default;
+
+}
+.DevoloperDetail >.devoloper{
+	background-color: white;
+	width: 200px;
+	height: 210px;
+	margin: 35px 20px 0px 0px;
+	text-align: center;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.devoloper .devoloperImage img{
+	height: 100px;
+	width: 130px;
+	border-radius: 80%;
+}
+.devoloper .devoloperImage i{
+	color: black;
+	margin-top: 20px;
+	font-size: 60px;
+	height: 90px;
+	width: 130px;
+	border-radius: 80%;
+}
+.devoloper .devoloperName{
+	font-size: 20px;
+	color: black;
+	padding: 5px;
+	font-weight: bold;
+	text-shadow:  1px 1px 1px #000, 
+               2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.devoloper  .devoloperDetail{
+	font-size: 13px;
+	color:rgba(0, 0, 0, 0.9);
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.innerSection6 .OurDevoloper h3{
+	font-size: 50px;
+    font-weight: 700;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px #000, 
+               1px 3px 3px rgba(0, 0, 0, 0.8); 
+}
+.innerSection6 .OurDevoloper p{
+	margin-top: 10px;
+	color: #B0B0B0;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+@media(max-width: 1310px){
+	.section6{
+		height: 750px;
+	}
+	.section6 .innerSection6{
+		height: 600px;
+	}
+}
+@media(max-width: 895px){
+	.section6{
+		height: 900px;
+	}
+	.section6 .innerSection6{
+		height: 800px;
+	}
+	}
+@media(max-width: 675px){
+	.section6{
+		height: 1200px;
+	}
+	.section6 .innerSection6{
+		height: 1100px;
+	}
+}
+@media(max-width: 441px){
+	.section6{
+		height: 1900px;
+	}
+	.section6 .innerSection6{
+		height: 1800px;
+	}
+	.innerSection6 .OurDevoloper h3{
+	font-size: 30px;
+}
+.innerSection6 .OurDevoloper p{
+	font-size: 10px;
+}
+}

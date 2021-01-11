@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+ 
+
+  *{
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  }
+  body{
+  	position: relative;
+  }
+  .bottom{
+  	position: absolute;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	top: 50px;
+  	left: 45%;
+  	height: 40px;
+  	width: 130px;
+  	background: black;
+  	border: 1px solid black;
+  	color: white;
+  	cursor: pointer;
+  	border-radius: 8px;
+  	letter-spacing: 2px;
+  	box-shadow: 0px 2px 2px darkblue;
+  }
+  .PopupForm{
+  	position: fixed;
+  	transform: translate(-50%, -50%);
+  	left: 50%;
+  	top: 50%;
+  	
+  	height: 60vh;
+  	background: green;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  }
+  .PopupForm h1{
+  	color: white;
+  	letter-spacing: 2px;
+  	overflow: hidden;
+  }
+  #PopupFormID{
+  width: 0%;
+  transition: 300ms linear;
+  overflow: hidden;
+  }
+  /* Database Student Insert Form */
+  
+ 
+ .DataStuInsSecP{
+ 	position: fixed;
+ 	right: 0;
+ 	top: 50px;
+ 	right: 1px;
+ 	
+ }
+ 
+.DataStuInsSecD{
+	width: 84%;
+	z-index: 110;
+ 	height: 91vh;
+ 	background: rgba(0, 0, 0, .5);
+ 	overflow: hidden;
+ 	overflow-y: scroll;
+ 	border-radius: 6px;
+ 	display: flex;
+ 	justify-content: center;
+ 	font-family: font-family: 'Zilla Slab', serif;
+}
+.DataStuInsSecD::-webkit-scrollbar {
+  display: none;
+}
+
+/* Insert Student Id */
+#InsertStudentId{
+	display: none;
+}
+.InDataStuInsSec{
+	width: 97%;
+	position: relative;
+	background: #E2E2E2;
+	height: 200vh;
+	top: 30px;
+	border: 2px dotted black;
+	border-top: hidden;
+	overflow: hidden;
+}
+.Cross{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 30px;
+	color: black;
+	background: white;
+	padding: 10px;
+	border-bottom-left-radius: 8px;
+	text-shadow: 0px 2px 2px cyan;
+	cursor: pointer;
+	z-index: 10;
+	box-shadow: 0px 0px 2px 2px white;
+}
+.FormLogo{
+	position: relative;
+	background-image: url('Image&Logo/FormTopBackground.jpg');
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .6);
+}
+.FormLogo::after{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	content: url('Image&Logo/NewLogo.png');
+	background: rgba(0, 0, 0, .8);
+	width: 100%;
+	height: 35%;
+}
+/* First Personal Info */
+.FormData{
+	position: relative;
+	top: 15px;
+	width: 96%;
+	height: 100%;
+	left: 18px;
+	font-family: font-family: 'Zilla Slab', serif;
+}
+/* Inside Form Data */
+.FormData .HeadingP{
+	padding: 6px 0px;
+}
+.FormData .HeadingP1{
+	padding: 6px 0px;
+	
+}
+.FormData .HeadingD h3{
+	color: black;
+	box-shadow: rgba(0, 0, 0, .6);
+	letter-spacing: 2px;
+	font-size: 21px;
+	position: relative;
+}
+.FormData .HeadingD h3::after{
+	position: absolute;
+	content: '';
+	background: linear-gradient(to left,black,blue);
+	border-radius: 8px;
+	box-shadow: 0px 2px 2px black;
+	width: 50px;
+	height: 3px;
+	text-align: center;
+	left: 0;
+	bottom: -10%;
+}
+.FormData .PositionForms{
+
+}
+.FormData .SecondPartOfForm{
+	display: flex;
+	justify-content: space-between;
+}
+.SubmitDesign{
+	text-align: center;
+}
+.SubmitDesign input{
+	letter-spacing: 1.5px;
+	padding: 10px 20px;
+	border-radius: 7px;
+	font-size: 15px;
+	border: none;
+	background: black;
+	color: white;
+	box-shadow: 0px 2px 2px cyan;
+	cursor: pointer;
+	transition: 500ms ease;
+}
+.SubmitDesign input:hover{
+	box-shadow: 0px 2px 2px white;
+}
+.TableDesign{
+	padding: 13px 0px;
+}
+.TableDesign table{
+	width: 100%;
+	border-spacing: 18px 5px;
+}
+.TableDesign table tr{
+	letter-spacing: .5px;
+	font-size: 17px;
+}
+.TableDesign table tr th{
+	float: left;
+	
+}
+.TableDesign table tr td input{
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .6);
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+
+}
+.TableDesign table tr select{
+ 	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, .6);
+	font-weight: bold;
+	font-size: 16px;
+}
+/* Animation Form */
+.AnimateDataForm {
+    animation: zoomm .5s;
+}
+@keyframes zoomm {
+    from {
+    	transform: scale(0);
+    } 
+    to {
+    	transform: scale(1);
+    }
+}

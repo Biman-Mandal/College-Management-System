@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.DataTopNav{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #2E4C64;
+	font-family: 'Oxygen', sans-serif;
+}
+.br{
+	background: #FF5D5D;
+	width: 100%;
+	height: 2px;
+}
+.InnerDataTopNav{
+	position: absolute;
+}
+.DataTechnoLogo{
+	left: 45px;
+}
+.DataTechnoLogo img{
+	border-radius: 5px;
+	width: 51px;
+	height: 50px;
+}
+.DatabaseName{
+	left: 110px;
+	top: 12px;
+}
+.DatabaseName a{
+	text-decoration: none;
+	color: white;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	position: relative;
+}
+.DatabaseName a::after{
+	content: '';
+	position: absolute;
+	bottom: -12%;
+	border-radius: 8px;
+	width: 0%;
+	height: 3px;
+	left: 50%;
+	background: white;
+	transition: all 500ms ease;
+}
+.DatabaseName a:hover::after{
+	width: 100%;
+  	left: 0%;
+}
+.DataTopNavLogout{
+	right: 20px;
+	top: 15px;
+}
+.DataTopNavLogout a{
+	padding: 14px 10px;
+	border-radius: 4px;
+	background: #3CB6E3;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	letter-spacing: 1px;
+	border-right: 1.5px solid #fff;
+	border-left: 1.5px solid #fff;
+	transition: 200ms ease;
+}
+.DataTopNavLogout a i{
+	margin-right: 2px;
+	transition: 200ms ease;
+}
+.DataTopNavLogout:hover.DataTopNavLogout a i{
+	color: #FF6565 ;
+}
+.DataSideNav{
+	position: fixed;
+	width: 240px;
+	background: skyblue;
+	height: 100vh;
+	font-family: 'Oxygen', sans-serif;
+	z-index: 10;
+	top: 50.1px;
+	box-shadow: 0px 5px 6px 0px black;
+}
+.InnerDataSideNav{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.InnerDataSideNav .links{
+	top: 10px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.InnerDataSideNav .links li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin: 3px 0px;
+	width: 100%;
+	height: 45px;
+	background: #fff;
+}
+.InnerDataSideNav .links .InnerLinks{
+	width: 100%;
+	height: 0px;
+	transition: 200ms;
+	overflow: hidden;
+}
+
+.InnerDataSideNav .links .InnerLinks a{
+	text-decoration: none;
+	width: 100%;
+	height: 35px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 6px 0px;
+	background: white;
+}
+.SideDataInsertO{
+	
+    cursor: pointer;
+}
+.SideDataInsert{
+	position: relative;
+	cursor: pointer;
+}
+.SideDataInsert::after{
+	/* content: "\f078";
+	font-family: font awasome; */
+	position: absolute;
+	content: "\f0ab";
+	font-family: FontAwesome;
+	top: 34%;
+	right: 13%;
+	font-size: 16px;
+	color: #3CB6E3;
+	
+}
+.DatabaseBodySection{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background: #C2C2C2;
+}
+.DatabaseBodySection h1{
+	color: white
+}
+.InnerDatabaseBodySection{
+	position: absolute;
+	height: 100vh;
+	right: 0;
+	width: 82.18%;
+}
+.FirstBodySection{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.InnerFirstBodySection{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Oxygen', sans-serif;
+}
+.FirstPart{
+	position: absolute;
+	top: 10px;
+	text-shadow: 0px 1.5px 2px black;
+}
+.FirstPart h2{
+	letter-spacing: 1px;
+	position: relative;
+	font-size: 22px;
+}
+.FirstPart h2::after{
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	content: "";
+	width: 120px;
+	height: 7px;
+	background: linear-gradient(to left,skyblue,red);
+	border-radius: 8px;
+}
+.SecondPart{
+	position: absolute;
+	left: 0px;
+	top: 60px;
+}
+.ThirdPart{
+	position: absolute;
+	left: 0px;
+	top: 265px;
+}
+.FourthPart{
+	position: absolute;
+	left: 0px;
+	top: 475px;
+}
+.FifthPart{
+	position: absolute;
+	left: 0px;
+	top: 684px;
+}
+.InsertDataText{
+	width: 100%;
+	height: 55px;
+	box-shadow: 0px 1px 1px 1px rgba(51,153,204,0.8);
+	 
+
+}
+.InsertDataText h2{
+	font-size: 21px;
+	letter-spacing: 2px;
+	margin-top: 8px;
+	margin-left: 15px;
+	color: black;
+	text-shadow: 0px 1px 2px black;
+	position: relative;
+}
+.InsertDataText h2::after{
+	position: absolute;
+	content: "";
+	border-radius: 10px;
+	left: 0;
+	bottom: -8px;
+	width: 60px;
+	height: 6px;
+	background: linear-gradient(to left,skyblue,red);
+}
+.SecondPartPosition{
+	position: relative;
+	top: 110px;
+}
+.ThirdPartPosition{
+	position: relative;
+	top: 163px;
+}
+.FourthPartPosition{
+	position: relative;
+	top: 217px;
+}
+.FifthPartPosition{
+	position: relative;
+	top: 271px;
+}
+.DatabaseHomeBoxs{
+	
+	width: 100%;
+	height: 160px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.DatabaseHomeBoxs .BoxDesign{
+	margin: 0px 20px;
+	width: 200px;
+	background: white;
+	height: 90%;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, .8)
+}
+.FirstBox{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.FirstBox div{
+
+}
+.BoxType{
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 18px;
+	text-shadow: 0px 1px 2px white;
+	width: 100%;
+	background: black;
+}
+
+.ClickHere{
+	font-size: 15px;
+	border-radius: 5px;
+	letter-spacing: 1.4px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .5);
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
+	position: absolute;
+	bottom: 2px;
+	padding: 10px 15px;
+	background: skyblue;
+	cursor: pointer;
+}
+.ClickHere:hover,
+.ClickHere:focus{
+	box-shadow: 0px 0px 0px black;
+}
+
+.ClickHere i{
+	margin-left: 5px;
+	color: red;
+}
+.ClickHere:hover.ClickHere i{
+	color: black;
+}
+.BoxIcon{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: gray;
+	width: 100%;
+	height: 59px;
+	font-size: 30px;
+	color: #F3F541;
+	text-shadow: 0px 2px 2px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Loadin Function Css */
+
+
+
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: white url('../Database/2.gif') no-repeat center;
+  overflow: hidden;
+  z-index: 221;
+ }
+
+
+ /* End Of Loading */
+
+
+
+
+ 
+.NavbarSection{
+	position: relative;
+	font-family: 'Cabin', sans-serif;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.TopNavbar{
+	position: fixed;
+	top: 0;
+	width: 100%;
+ 	height: 45px;
+ 	background: white;
+ 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .7);
+ 	z-index: 99;
+}
+.TopNavbar .TechnoIcon img{
+	position: absolute;
+	width: 50px;
+ 	height: 45px;
+ 	left: 40px;
+ 	transition: .4s linear;
+}
+.TopNavbarIcon{
+	position: absolute;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	left: 220px;
+	display: none;
+}
+.TopNavbarIcon i{
+	font-size: 28px;
+	color: rgba(0,0,0,.8);
+}
+
+.DatabaseText{
+	position: absolute;
+	left: 95px;
+	top: 12px;
+	transition: .4s linear;
+}
+.DatabaseText a{
+	cursor: pointer;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: relative;
+	text-decoration: none;
+	color: black;
+}
+.DatabaseText a::after{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: black;
+	bottom: -4%;
+	left: 50%;
+	transition: 200ms;
+}
+.DatabaseText a:hover::after{ /*When we hover on a then that after method will animate*/
+	width: 100%;
+	left: 0%;
+}
+.TopNavbar .Logout{
+	position: absolute;
+	right: 35px;
+	top: 0;
+	padding: 12.5px 11px;
+	border: solid 2px rgba(0, 0, 0, 0.3);
+	border-top: hidden;
+	border-bottom: hidden;
+	cursor: pointer;
+	transition: 500ms ease;
+}
+.TopNavbar .Logout:hover{
+	background: white;
+}
+.TopNavbar .Logout a{
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight :normal;
+	color: black;
+}
+.TopNavbar .Logout a i{
+	margin-left: 5px;
+}
+.SideNavbar{
+	position: fixed;
+	top: 46px;
+	height: 100vh;
+	width: 210px;
+	background-color: black;
+	box-shadow: 3px 0px 5px rgba(0, 0, 0, .7);
+	z-index: 98;
+}
+.InnerSideNavbar{
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+.InnerSideNavbar li{
+	list-style: none;
+	border-bottom: 1px solid rgba(241,243,250,.1) ;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: .1s linear;
+    letter-spacing: 1.2px;
+    position: relative;
+}
+
+.InnerSideNavbar li i{
+	margin-right: 8px;
+	transition: .4s ease;
+}
+.InnerSideNavbar li::after{
+	position: absolute;
+	content: "";
+	background: white;
+	width: 3px;
+	height: 43px;
+	top: 0;
+	right: 0px;
+	border-radius: 100px;
+}
+.InnerSideNavbar:hover.InnerSideNavbar li i{
+	color: skyblue;
+}
+.SideNavDrop{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid white;
+}
+.SideNavDrop a{
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 14.5px !important;
+	padding: 8px 30px;
+	position: relative;
+	text-align: center;
+	transition: 400ms;
+}
+.SideNavDrop a:hover,
+.SideNavDrop a:focus{
+	background: white;
+	color: black
+}
+#SideNavDropId1{	
+	transition: 300ms linear;
+	height: 0px;
+	overflow: hidden;
+}
+#SideNavbarId2{
+	transition: 300ms linear;
+	height: 0px;
+	overflow: hidden;
+}
+#SideNavbarId3{
+	height: 0px;/* 70px; */
+	overflow: hidden;
+	transition: 300ms linear;
+}
+#SideNavbarId4{
+	height: 0px;/* 70px; */
+	overflow: hidden;
+	transition: 300ms linear;
+}

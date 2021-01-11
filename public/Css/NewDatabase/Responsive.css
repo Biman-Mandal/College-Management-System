@@ -1,0 +1,206 @@
+@media(max-width: 1280px){
+.TopNavbarIcon{
+	display: flex;
+}
+.SideNavbar{
+	width: 0px;
+	overflow: hidden;
+	transition: .2s linear;
+}
+.DatabaseBodyPositon{
+	width: 100%;
+	height: 92vh;
+	left: 49%; /* Fixing as need */
+	top: 18%;
+	transform: translate(-50%,-50%);
+
+}
+
+
+}
+@media(max-width: 1201px){
+
+.BoxPosition2{
+	right: 0%;
+	width: 100%;
+}
+.InsertDataP{
+	position: absolute;
+	top: -50px;
+	left: 44%;
+}
+.InsertDataP1{
+	position: absolute;
+	top: 20px;
+	left: 47%;
+}
+.InsertDataP2{
+	position: absolute;
+	top: 20px;
+	right: 27%;
+}
+.SecondSectionP{
+	position: absolute;
+	top: 180px;
+	
+}
+.ThirdSectionP{
+	position: absolute;
+	top: 670px;
+}
+/* Fourth Div */
+.FourthSectionp{
+	position: absolute;
+	top: 1200px;
+}
+}
+@media(max-width: 1146px){
+	.SearchSection{
+		top: 0px;
+		right: 0px;
+	}
+.BoxPosition2{
+	left:  10%;
+}
+.BoxPosition1{
+	left: 20%;
+}
+	.InsertDataP1{
+		top: -50px;
+		left: 42%;
+	}
+	.InsertDataP2{
+		top: 50px;
+		right: 15%;
+	}
+.FourthSectionp{
+	position: absolute;
+	top: 1200px;
+	left: -5%;
+	transform: translate(-50%-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.FourthSectionD .InnerDiv,.InnerDiv1{
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.FourthSectionp{
+	display: flex;
+	flex-wrap: wrap;
+}
+}
+@media(max-width: 965px){
+ .FourthSectionp.InnerDiv1{
+ 	position: absolute;
+ 	top: 0px;
+ }
+ .BoxPosition2{
+ 	position: absolute;
+ 	top: 100px;
+ }
+ .DatabaseBodySection{
+ 	height: 300vh;
+ }
+.FirstSectionP{
+	top: -10px;
+}
+.SearchSection{
+		display: none;
+	}
+}
+@media(max-width: 700px){
+.InsertDataP1{
+		top: -50px;
+		left: 33%;
+	}
+.InsertDataP2{
+	right: 1%;
+	}
+	
+
+}
+@media(max-width: 750px){
+	.InsertDataP{
+		left: 40%;
+	}
+	}
+@media(max-width: 600px){
+	.ThirdSectionP{
+		top:1150px;
+	}
+	.FourthSectionp{
+	position: absolute;
+	top: 2100px;
+	}
+	.DatabaseBodySection{
+ 	height: 450vh;
+ }
+}
+@media(max-width: 600px){
+.InsertDataP1{
+		top: -50px;
+		left: 33%;
+	}
+.InsertDataP2{
+	right: 1%;
+	}
+	.FirstSectionP{
+	
+	top: -240px;
+	
+}
+	.SecondSectionP{
+		top: -90px;
+	}
+	.InsertDataP{
+		left: 33%;
+	}
+	.ThirdSectionP{
+		top:900px;
+	}
+	.FourthSectionp{
+	position: absolute;
+	top: 1850px;
+	}
+	.InsertDataP1{
+		top: -50px;
+		left: 14px;
+		text-align: center;
+	}
+.InsertDataP2{
+	right: 0px;
+	left: 35px;
+	top: 19px;
+	text-align: center;
+	}
+}
+@media(max-width: 400px){
+	.InsertDataP1{
+		top: -67px !important;
+		left: 33%;
+	}
+	.InsertDataP1 h1::after{
+		display: none;
+	}
+	.FirstSectionP{
+		top: -200px;
+	}
+	.SecondSectionP{
+		top: -40px;
+	}
+	.DatabaseBodySection{
+		height: 500vh;
+	}
+	}
+	@media(max-width: 450px){
+		.TopNavbarIcon{
+			left: 190px;
+		}
+	}

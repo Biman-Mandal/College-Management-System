@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@charset "utf-8";
+.Database_check label{
+  float: left;
+  display: inline;
+}
+label #sidebar_btn{
+margin-top: -26px;
+float: left;
+position: absolute;
+color: white; 
+   background: url(black.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+cursor: pointer;
+ font-size: 23px;
+margin-left: 160px;
+transition-property: color;
+transition: all 500ms ease;
+}
+label #sidebar_btn:hover,
+label #sidebar_btn:focus{
+   color: red;
+}
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+.content{
+  
+}
+
+#check:checked ~ .content{
+  
+}
+
+#check{
+  display: none;
+}
+.content{
+  background: url(database.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  transition: 0.5s;
+}

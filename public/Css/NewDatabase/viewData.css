@@ -1,0 +1,157 @@
+.ViewTopTextP{
+	position: absolute;
+	top: 35px;
+	text-align: center;
+}
+.ViewTopTextD h2{
+	margin-bottom: 10px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 25px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+.ViewTopTextD p{
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #929292 ;
+}
+.ViewTopTextD .Underline{
+	position: absolute;
+	left: 37px;
+	top: 35px;
+	width: 250px;
+	height: 2px;
+	border-radius: 100px;
+	background: #BEBEBE;
+}
+/*.ViewData{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}*/
+/*Teacher View*/
+/*
+
+*/
+
+
+/*Student Data*/
+/*ViewDataS
+MainHeaderS
+HeaderS*/
+.ViewDataS{
+	position: absolute;
+	top: 130px;
+	left: 175px;
+}
+.ViewDataT{
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+.ViewDataE{
+	position: absolute;
+	top: 130px;
+	left: 260px;
+}
+.ViewDataA{
+	position: absolute;
+	top: 130px;
+	left: 300px;
+}
+.ViewDataP{
+	position: absolute;
+	top: 130px;
+	left: 248px;
+}
+.ViewDataAP{
+	position: absolute;
+	top: 130px;
+	left:300px;
+}
+.ViewDataPAD{
+	position: absolute;
+	top: 130px;
+	left:280px;
+}
+.ViewDataAdApp{
+	position: absolute;
+	top: 130px;
+	left:230px;
+}
+.ViewData table{
+	border-radius: 10px;
+	border-collapse: collapse;
+	border-right: 2px solid skyblue;
+	border-left: 2px solid skyblue;
+
+}
+.ViewData table .MainHeader{
+	background: skyblue;
+
+}
+.ViewData table .MainHeader td{
+	padding: 15px 20px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	background: skyblue;
+	/*width: 100%;*/
+	/*height: 100%;*/
+}
+.ViewData table tr td img{
+	width: 120px;
+  	height: 80px;
+  	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.ViewData td{
+	padding: 0px 0px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	text-align: center;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	background: white;
+	position: relative;
+}
+.ViewData td::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: skyblue;
+	bottom: 0;
+	left: 0;
+}
+.Header td a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 1px;
+	/*margin: 10px 0px !important;*/
+	position: relative;
+}
+.Header td a::after{
+	position: absolute;
+	content: "";
+	background: black;
+	width: 100%;
+	height: 2px;
+	bottom:0;
+	left: 0%; 
+	transition: .2s ease;
+}
+.Header td a:hover::after{
+	width: 0%;
+	left: 50%; 
+
+}

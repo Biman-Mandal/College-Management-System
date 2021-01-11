@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+
+
+.DatabaseBodySection{
+	position: absolute;
+	right: 0;
+	top: 46px;
+	width: 100%;
+	height: 265vh;/*As Need*/
+	font-family: 'Zilla Slab', serif;
+	overflow: hidden;
+	background: #3E3E3E;
+
+}
+.DatabaseBodyPositon{
+	background-attachment: fixed;
+	position: relative;
+	width: 100%;
+	height: 92vh;
+	display: flex;
+	left: 60px; /* Fixing as need */
+	justify-content: center;
+
+}
+.FirstSectionP{
+	position: absolute;
+	top: 25px;
+	text-align: center;
+}
+.FirstSectionD h2{
+	margin-bottom: 10px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 25px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+.FirstSectionD p{
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #929292 ;
+}
+.FirstSectionD .Underline{
+	position: absolute;
+	left: 11px;
+	top: 35px;
+	width: 250px;
+	height: 2px;
+	border-radius: 100px;
+	background: #BEBEBE;
+}
+.SecondSectionP{
+	position: absolute;
+	top: 130px;
+	
+}
+.ThirdSectionP{
+	position: absolute;
+	top: 600px;
+}
+/* Fourth Div */
+.FourthSectionp{
+	position: absolute;
+	top: 1090px;
+}
+.FourthSectionD{
+	/* background: black; */
+
+	width: 100%;
+	height: 420px;
+	color: white;
+	display: flex;
+	
+}
+.FourthSectionD .InnerDiv,.InnerDiv1{
+	position: relative;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.FourthSectionD .InnerDiv{
+	width: 55%;
+
+}
+.FourthSectionD .InnerDiv1{
+	
+	width: 50%;
+}
+/* Second Div Design */
+.SecondSectionD{
+	width: 100%;
+	height: 420px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.InsertDataP{
+	position: absolute;
+	top: 20px;
+}
+.InsertDataP1{
+	position: absolute;
+	top: 20px;
+	left: 47%;
+}
+.InsertDataP2{
+	position: absolute;
+	top: 20px;
+	right: 39%;
+}
+.InsertDataD{
+	letter-spacing: 3px;
+	color: white;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px cyan;
+	margin-top: 2px;
+}
+.InsertDataD h1{
+	position: relative;
+}
+.InsertDataD h1::after{
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 3px;
+	border-radius: 100px;
+	background: skyblue;
+	left: 0;
+	bottom: -7px;
+	box-shadow: 0px 2px 0px black;
+}
+.BoxPosition{
+	position: absolute;
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.BoxPosition1{
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 20%;
+}
+.BoxPosition2{
+	flex-wrap: wrap;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 15%;
+}
+.InnerBoxDesign{
+	position: relative;
+	display: flex;
+	justify-content: center;'
+	align-items: center;
+	width: 220px;
+	background: white;
+	height: 195px;
+	border-radius: 10px;
+  	transition: 300ms linear;
+  	margin: 10px;
+}
+.InnerBoxDesign:hover{
+	 box-shadow:
+  0 2.8px 2.2px rgba(153,255,255, 0.034),
+  0 6.7px 5.3px rgba(153,255,255, 0.048),
+  0 12.5px 10px rgba(153,255,255, 0.06),
+  0 22.3px 17.9px rgba(153,255,255, 0.072),
+  0 41.8px 33.4px rgba(153,255,255, 0.086),
+  0 100px 80px rgba(153,255,255, 0.12);
+  cursor: pointer;
+}
+.InnerBoxDesign .Logo{
+	position: absolute;
+	top: 5px;
+}
+.InnerBoxDesign .Logo img{
+	width: 100px;
+	height: 100px;
+}
+.InnerBoxDesign .Type{
+	position: absolute;
+	top: 105px;
+}
+.InnerBoxDesign .Type p{
+	color: black;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+.InnerBoxDesign .ClickHere{
+	position: absolute;
+	bottom: 24px;
+
+}
+.InnerBoxDesign .ClickHere a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 10px 12px;
+	box-shadow: 0px 2px 2px 2px cyan;
+	transition: 200ms;
+}
+.InnerBoxDesign .ClickHere a:hover{
+	background: #4B4B4B ;
+	color: white;
+}
+/* Second Body Section */
+/* SearchSection */
+.SearchSection{
+	position: absolute;
+	right: 100px;
+	top: 28px;
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	background: black;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	padding: 10px 12px;
+	box-shadow: 0px 2px 1px 1px skyblue;
+	transition: 200ms;
+}
+.SearchSection input{
+	width: 170px;
+	height: 24px;
+	outline: none;
+	border: 2px solid;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.SearchSection .SearchB{
+	margin-left: 7px;
+	margin-top: 2px;
+}

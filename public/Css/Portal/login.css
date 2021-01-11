@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: url('lap.jpg') center no-repeat;
+	position: relative;
+}
+nav{
+	width: 100%;
+	height: 55px;
+	background: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+nav h2{
+	letter-spacing: 1.6px;
+	color: white;
+}
+
+.signin{
+	background: rgba(44,62,80,0.7);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	position: absolute;
+	top:55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 450px;	
+}
+.LoginFormText{
+	background: #EEE19D;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	align-items: center;
+}
+.LoginFormText h2{
+	color: black;
+}
+.LoginForm form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.LoginForm form > input{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	margin-top: 15px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-size: 16px;
+	outline: none;
+	color: white !important;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+::placeholder{
+	color: aliceblue;
+	opacity: 0.8; 
+}
+.LoginForm button{
+	border: none;
+	width: 160px;
+	height: 30px;
+	background: white;
+	color: #000;
+	font-weight: bold;
+	transition: .5s;
+	font-size: 15px;
+	margin-top: 20px;	
+	border-radius: 15px;
+	cursor: pointer;
+}
+.LoginForm button:hover{
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+}
+.Pass{
+	margin-top: 30px;
+	position: relative;
+	width: 100%;
+	
+}
+.Pass a{
+	color: yellow;
+	text-decoration: blink;
+	text-decoration: none;
+}
+.Pass a:hover{
+	color: skyblue;
+}
+.Pass .Reset{
+	position: absolute;
+	right: 10px;
+}
+.Pass .Forgot{
+	position: absolute;
+	left: 10px;
+}
+.Register{
+	margin-top: 150px;
+}
+.Register a{
+	color: yellow;
+	text-decoration: blink;
+	text-decoration: none;
+	font-size: 18px;
+	text-decoration: underline;
+}
+.Register a:hover{
+	color: skyblue;
+/*
+form{
+	width: 240px;
+	text-align: center;
+}
+input
+{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: #fff; 
+}
+input[type=button]
+{
+	border: none;
+	width: 190px;
+	background: white;
+	color: #000;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 15px;
+	cursor: pointer;
+}
+input[type=button]:hover{
+	color: #fff;
+	background-color: black;
+}
+h2{
+	color: white;
+}
+a{
+	color: yellow;
+	text-decoration: blink;
+}
+a:hover{
+	color: skyblue;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+::placeholder{
+	color: aliceblue;
+	opacity: 0.8; 
+}

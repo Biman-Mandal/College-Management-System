@@ -1,0 +1,212 @@
+/* Teacher Form Size */
+.DataTeacherInsSecD {
+	width: 84%;
+	z-index: 110;
+ 	height: 91vh;
+ 	background: rgba(0, 0, 0, .5);
+ 	overflow: hidden;
+ 	overflow-y: scroll;
+ 	border-radius: 6px;
+ 	display: flex;
+ 	justify-content: center;
+ 	font-family: font-family: 'Zilla Slab', serif;
+ }
+ .DataTeacherInsSecD::-webkit-scrollbar {
+  display: none;
+}
+.InDataStuInsSec{
+	width: 97%;
+	position: relative;
+	background: #E2E2E2;
+	height: 200vh;
+	top: 35px;
+	border: 2px dotted black;
+	border-top: hidden;
+	overflow: hidden;
+}
+
+
+.InDataTeacherInsSec{
+	width: 97%;
+	position: relative;
+	background: #E2E2E2;
+	height: 166vh;
+	top: 35px;
+	border: 2px dotted black;
+	border-top: hidden;
+	overflow: hidden;
+}
+#InsertTeacherId{
+	display: none;
+}
+#AllotIdDatabseSection{
+	display: none;
+}
+#EmployeeInsertId{
+	display: none;
+}
+/* Class Alloted Insert Section */
+
+.FormData1{
+	width: 100%;
+	height: 100%;
+	font-family: font-family: 'Zilla Slab', serif;
+	display: flex;
+	justify-content: center;
+}
+.InDataAllotedInsSec{
+	width: 97%;
+	position: relative;
+	background: #E2E2E2;
+	height: 128vh;
+	top: 35px;
+	border: 2px dotted black;
+	border-top: hidden;
+	overflow: hidden;
+}
+.innerFormData1{
+	background: white;
+	width: 50%;
+	height: 100%;
+}
+.HeadingAlloted{
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+.HeadingAlloted h3{
+	font-size: 22px;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .6);
+	position: relative;
+}
+.HeadingAlloted h3::after{
+	position: absolute;
+	content: "";
+	background: black;
+	width: 150px;
+	height: 3px;
+	bottom: -19%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	border-radius: 50px;
+	box-shadow:0px 2px 1px rgba(0, 0, 0, .6);
+}
+.FormData1 .AllotedForm{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.AllotedForm table{
+	margin: 10px;
+	text-align: center;
+}
+.AllotedTable{
+	border-spacing: 0px 15px;
+}
+.AllotedTable tr th{
+	font-size: 19px;
+	letter-spacing: 1px;
+	position: relative;
+
+}
+.AllotedTable tr td select{
+	background: transparent;
+	width: 150px;
+	height: 30px;
+	border-radius: 6px;
+	text-align: right;
+	cursor: pointer;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	outline: none;
+	font-weight: bold;
+}
+.AllotedTable tr td select option{
+	background: black;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.AllotedTable tr td select:focus{
+	background: black;
+	color: white;
+	outline:  1px solid white;
+}
+.AllotedTable tr td input{
+	background: transparent;
+	width: 150px;
+	height: 30px;
+	border-radius: 6px;
+	text-align: right;
+	cursor: pointer;
+	font-size: 15px;
+	outline: none;
+	font-weight: bold;
+}
+.innerFormData1 .SubmitBtn{
+	text-align: center;
+}
+.innerFormData1 .SubmitBtn input{
+	letter-spacing: 1.5px;
+	padding: 10px 20px;
+	border-radius: 7px;
+	font-size: 15px;
+	border: none;
+	background: black;
+	color: white;
+	box-shadow: 0px 2px 2px cyan;
+	cursor: pointer;
+	transition: 500ms ease;
+	font-weight: bold;
+}
+.innerFormData1 .SubmitBtn input:hover{
+	box-shadow: 0px 2px 2px white;
+}
+.ErrorSection{
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+	
+	
+}
+
+.InnerErrorSection{
+	background: rgba(255,255,255,1);
+	width: 70%;
+	height: 35px;
+	position: absolute;
+	left: 235px;
+	z-index: 10;
+	overflow: hidden;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 5px 6px rgba(0,0,0,.5);
+
+}
+.SecondInnerError{
+	color: blue;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 20px;
+	top: 5px;
+	font-size: 18px;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+	text-shadow: 0px 1px 2px black;
+
+}
+.SecondInnerError i{
+	display: none;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background: skyblue;
+	font-size: 30px;
+	border-top-left-radius:6px; 
+	cursor: pointer;
+	font-weight: bold;
+}

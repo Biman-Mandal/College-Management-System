@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	/*font-family: Roboto,sans-serif;*/
+	font-family: 'Rubik', sans-serif;
+}
+body{
+	background:#E5E5E5 ;
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: white url('../Database/2.gif') no-repeat center;
+  overflow: hidden;
+  z-index: 100;
+ }
+ .ApplySection{
+ 	position: sticky;
+ 	top: 0;
+ 	z-index: 20;
+ }
+ .ApplyTopHeader{
+ 	position: relative;
+ 	width: 100%;
+ 	height: 45px;
+ 	background: white;
+ 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .7);
+ }
+ .ApplyTopHeader .ApplyTechnoLogo{
+ 	position: absolute;
+ 	left: 65px;
+ }
+ .ApplyTechnoLogo img{
+ 	width: 50px;
+ 	height: 45px;
+
+ 	transition: .4s linear;
+ }
+ /*
+RightNav
+innerRightNav
+LoginSectionNav*/
+
+ .ApplyTopHeader .RightNav{
+ 	position: absolute;
+ 	right: 50px;
+ 	top: 10px;
+ 	text-align: center;
+
+
+ } .ApplyTopHeader .RightNav a:focus{
+  	color: black;
+
+  }
+ .RightNav>a{
+ 	background: rgba(51,204,255,0.4);
+	font-size: 17px;
+	font-weight :normal;
+	color: black;
+	padding: 15px 16px;
+	letter-spacing: 2px;
+	border: solid 1.5px rgba(0, 0, 0, 0.4);
+	border-top: hidden;
+	border-bottom: hidden;
+	transition: .1s linear;
+
+ }
+.RightNav>a::after{
+	content: "\f0ab";
+	margin-left: 6px;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: FontAwesome;
+}
+#WelcomeSectionNav{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: white;
+	justify-content: center;
+	margin-top: 18px;
+	display: none;
+	z-index: 30;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .7);
+}
+/*
+ #WelcomeSectionNav span i{
+	z-index: 10;
+	z-index: 20;
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	right: 2px;
+	top: -11px;
+
+}*/
+ #WelcomeSectionNav a{
+	padding: 10px 0px;
+	color: black;
+	font-size: 14px;
+	transition: .13s linear;
+}
+#WelcomeSectionNav a:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+#LoginSectionNav{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	height: 90px;
+	border:  solid 2px rgba(0, 0, 0, 0.2);
+	border-top: hidden;
+	text-align: center;
+	background-color: white;
+	justify-content: center;
+	margin-top: 15.4px;
+	left: 6px;
+	display: none;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .7);
+ }
+ #LoginSectionNav span i{
+	z-index: 10;
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	right: 2px;
+	top: -11px;
+}
+ #LoginSectionNav a{
+	padding: 10px 0px;
+	color: black;
+	font-size: 14px;
+	transition: .13s linear;
+}
+#LoginSectionNav a:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+.navbarApply{
+	position: fixed;
+	top: 46px;
+	z-index: 18;
+	height: 100vh;
+	width: 210px;
+	background-color: black;
+
+}
+.InnernavbarApply{
+	border-right: 1px solid black;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+.InnernavbarApply li{
+	border-bottom: 1px solid rgba(241,243,250,.1) ;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+.ApplicatonFormLeft{
+	position: relative !important;
+	padding: 10px 15px !important;	
+}
+.ApplicatonFormLeft::after{
+ position: absolute;
+ content: '';
+ height: 40px;
+ right: 0;
+ top: 0;
+ width: 5px;
+ border-radius: 10px;
+ background:white;
+ 
+}
+
+
+.InnernavbarApply li:hover{
+	background: #4A7B95 ;
+	
+}
+
+.InnernavbarApply li i{
+	margin-right: 10px;
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+}
+.InnernavbarApply a{
+	font-size: 14px;
+	color: white;
+	letter-spacing: 1px;
+}
+.InnerSideResgister::after{
+	content: "\f0d7";
+	margin-left: 8px;
+	font-size: 15px;
+	font-family: FontAwesome;
+}
+#LoginSide{
+	border-bottom: 2px solid white;
+	display: none;
+	transition: .5s;
+}
+#LoginSide li{
+	padding: 6px 0px;
+	text-align: center;
+}
+.animate1 {
+    animation: zoomm .3s;
+}
+@keyframes zoomm {
+    from {
+    	transform: scale(0);
+    } 
+    to {
+    	transform: scale(1);
+    }
+}
+
+#Courses {
+	border-bottom: 2px solid white;
+	text-align: center;
+	width: 100%;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+	transition: .3s;
+}
+#Courses a{
+	list-style-type: square;
+	padding: 6px 0px;
+	text-align: center;
+	position: relative;
+}
+#Courses a:hover{
+	background: #4A7B95 ;
+}
+#Courses a::before{
+	position: absolute;
+	content: '';
+	background: #fff;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	left: 70px;
+	top: 12px;
+
+}
+.animate {
+    animation: zoom .3s;
+}
+@keyframes zoom {
+    from {
+    	height: 0px;
+    } 
+    to {
+    	height: 120px;
+    }
+}
+@media(max-width: 500px){
+	.innerDatabaseLoginPopup{
+		width: 350px;
+	}
+}
+.section1{
+	position: relative;
+	background: #eaeaea;
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+}
+.innnerSection{
+	position: absolute;
+	left: 230px;
+	top: 65px;
+	width: 83%;
+	height: 89%;
+	background: red;
+	display: flex;
+
+}
+.rightnav{
+	position: relative;
+}
+.innerrightnav{
+	position: absolute;
+	right: -75px;
+	top: 30vh;
+ 	font-size: 15px;
+	background: linear-gradient(to left,orange,red);
+	padding: 10px 50px;
+	cursor: pointer;
+	color: white;
+	border-radius: 8px;
+}
+.innerrightnav{
+		transform: rotate(270deg);
+
+}
+@media(max-width: 830px)
+{
+	.navbarApply{
+		display: none;
+	}
+	.innerrightnav{
+		display: none;
+	}
+	.ApplyTopHeader .ApplyTechnoLogo{
+		left: 25px;
+	}
+}

@@ -1,0 +1,289 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Noto+Sans+HK&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pridi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap');
+*{
+  margin:0;
+  padding: 0;
+}
+ .TeacherView_table{ 
+  margin: auto;
+  border: 3px solid green;
+  width: 65%;
+  height: 60vh;
+  align-items: center;
+  background: white;
+  background-size: cover;
+  border-top: hidden;
+ border-bottom: hidden;
+ box-shadow: 0 5px 15px rgba(0,0,0,1);
+
+}
+.TeacherView_table table{
+	border-collapse:collapse;
+    border-spacing:0px;
+	margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: #ADA996; 
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+
+
+}
+.TeacherView_table table tr{
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+  
+}
+.TeacherView_table table tr td{
+	
+}
+.TeacherView_table table .Teacher_td{
+	background-color: black;
+	padding: 15px 40px;
+	color: white;
+	text-transform: uppercase;
+
+}
+.TeacherView_table table .Teacher_td1{
+	padding: 15px 40px;
+	background-color: #D5C8C9 ;
+	color: #FF3F51;
+}
+.ViewF_Pic{
+	  box-shadow: 0 5px 15px rgba(0,0,0,1);
+	  background: url(2.jpg);
+	  width: 65%;
+	  height:133px;
+	  background-position: center;
+    background-size: cover; 
+    margin: auto;
+    align-items: center;
+    border: 2px solid green;
+    border-top: hidden;
+    border-bottom: hidden;
+    
+}
+.ViewF_Pic h3{
+   margin: auto;
+   align-items: center;
+   text-align: center;
+   font-size: 23px;
+   transform: translateY(100px);
+   font-family: 'Pridi', serif;
+   color: white;
+   width: 100%;
+   background-color: black;
+
+}
+.button_Update{
+	text-decoration: none;
+	height: 20px;
+	font-size: 1em;
+	padding:10px 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	font-weight: 40;
+	font-weight: bold;
+	font-family: Rockwell;
+	height: 40px; 
+	font-weight: 730;
+	transition: .1s ease-in;
+	border: hidden;
+	background: black;
+	color: white;
+	transition: 0.3s ease-in;
+    
+}
+.button_Update:hover{
+   background: #FF416C; 
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+background: linear-gradient(to right, #FF4B2B, #FF416C);
+}
+.pagination li {
+  display: inline-block;
+  padding: 10px 8px;
+  float: right;
+  margin-top: 30px;
+	float: left;
+	border: none;
+   
+}
+
+.pagination li a{
+  background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+     padding: 10px 16px;
+     font-family: rockwell;
+     font-weight: 600;
+     text-decoration: none;
+     list-style: none;
+     border: 1px solid #ddd;
+}
+
+.pagination li a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination li a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination li .active {
+ 
+background: #FF416C; 
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+background: linear-gradient(to right, #FF4B2B, #FF416C);
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  font-family: rockwell;
+   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+ border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pagination li a:hover:not(.active) {
+
+background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+
+
+
+/* Faculty View Page */
+.View_Image{
+ background: url(database.jpg);
+ height: 100vh;
+ width: 100%;
+ background-position: center;
+ background-size: cover;
+ z-index: -1;
+}
+    
+.view_nav{
+width: 100%;
+height: 7.5vh;
+background: #83a4d4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #83a4d4, #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.ViewBack_btn{
+  float: right;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-right: 70px;
+}
+.ViewBack_btn button{
+  height: 6.7vh;
+  font-size: 1em;
+  width: 14vh;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 40;
+  font-weight: bold;
+  font-family: Rockwell;
+ 
+  font-weight: 730;
+  transition: .1s ease-in;
+  border: hidden;
+  background: black;
+  transition: 0.3s ease-in;
+}
+.ViewBack_btn button a{
+  text-decoration: none;
+  color: white;
+  font-size: 2.8vh;
+  text-align: center;
+}
+.ViewBack_btn button:hover{
+
+     background: #FF416C; 
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+background: linear-gradient(to right, #FF4B2B, #FF416C);  
+}
+
+.view_upBtn{
+  margin-top: 3px;
+  float: left;
+  margin-left:20px;
+}
+/* Faculty View Table */
+
+.View_table{ 
+  margin: auto;
+  border: 3px solid green;
+  margin-top: 40px;
+  width: 26%;
+  height: 80vh;
+  align-items: center;
+  background: white;
+  background-size: cover;
+  border-top: hidden;
+  border-bottom: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,1);
+
+}
+.View_table table{
+  border-collapse:collapse;
+    border-spacing:0px;
+  margin: auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: #ADA996; 
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+.View_table table tr{
+   font-family: 'Noto Serif', serif;
+   text-align: center;
+  
+}
+.View_table table .TeacherView_td{
+  background-color: black;
+  height: 8vh;
+  width: 100%;
+   font-size: 2.7vh;
+  color: white;
+  text-transform: uppercase;
+  background-size: auto;
+
+}
+.View_table table .TeacherView_td1{
+
+  color: black;
+  font-size: 2.8vh;
+
+}
+.DeleteMsg{
+  color: white;
+  
+  height: 30px;
+  background: skyblue;
+  margin: auto;
+  width: 65%;
+  align-items: center;
+}
+.DeleteMsg p{
+  font-size: 18px;
+  color: white;
+  float: left;
+  margin-left: 20px;
+  margin-top: 6px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}

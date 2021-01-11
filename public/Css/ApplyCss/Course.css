@@ -1,0 +1,163 @@
+.BodySection{
+	position: relative;
+	width:100%;
+	height:180vh;
+	overflow: hidden;
+	
+}
+.innerBodySection{
+	position: absolute;
+	left:200px;
+	top: 0px;
+	width: 88%;
+	height: 100%;
+	background:rgb(241,243,250);
+	display: flex;
+	justify-content: center;	 
+}
+.innerBodySection .BcaHeader{
+	position: fixed;
+	z-index: 19;
+	background: rgba(0, 0, 0, .8);
+	width: 100%;
+	height: 55px;
+	border-bottom: 2px solid skyblue;
+
+}
+.BcaHeader h2{
+	font-size: 18px;
+	margin-top: 16px;
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: normal;
+	color: white;
+	text-shadow:  1px 0px 1px #fff, 
+               0px 1px 0px skyblue;
+}
+.innerBodySection .Depertment{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 65px;
+}
+
+
+.DepartmentLeft{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.DepartmentLeft >.Para{
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.DepartmentRight{
+	width: 60%;
+	height: 100%
+}
+
+.FirststPara h2{
+	margin-bottom: 20px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #215586;
+	position: relative;
+	text-shadow: 0px 1px 0px white;
+}
+.FirststPara h2::after{
+	content: '';
+	position: absolute;
+	top: 21px;
+	left: 1px;
+	background: red;
+	width: 40px;
+	height: 3px;
+}
+.FirststPara p{
+	font-size: 13px;
+	text-shadow: 0px 0px 0px black;
+    color:#1C1C1C;
+    letter-spacing: 1px;
+	line-height: 20px;
+	text-align: justify;
+	/*column-gap: 50px;
+	column-count: 3;
+column-rule: dashed;
+	column-rule-width:2px;
+	column-rule-color:white;*/
+}
+.SecondPara >div{
+	
+}
+.InnerPara p{
+	margin-bottom:20px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #215586 ;
+	text-shadow: 0px 1px 0px white;
+              position: relative;
+}
+.InnerPara p::after{
+	content: '';
+	position: absolute;
+	top: 21px;
+	left: 0px;
+	background: red;
+	width: 30px;
+	height: 3px;
+}
+.innerParalist li{
+	list-style: lower-roman;
+	padding: 4px 0px;
+	font-size: 13px;
+	text-shadow: 0px 0px .5px black;
+ 	color:#1C1C1C;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+.DepartmentRight >.Para{
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+}
+.DepertmentTable{
+	margin-top:  20px;
+}
+.DepertmentTable table{
+	width: 100%;
+	height: 290px;
+	position: relative;
+}
+
+.DepertmentTable table tr th{
+	border: 1px solid black;
+	width: 170px;
+	font-size: 13px;
+	background: skyblue;
+}
+.DepertmentTable table tr td{
+	border: 1px solid black;
+	text-align: center;
+	font-size: 13px;
+	background: white;
+	color: black;
+}
+.DepertmentTable table tr td a{
+	color: red;
+	font-size: 15px;
+}
+.FessImage{
+	margin-top: 10px;
+}
+.FessImage img{
+	width: 100%;
+	height: 250px
+}

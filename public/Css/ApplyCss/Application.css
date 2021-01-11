@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.AppSection{
+	position: relative;
+	width:100%;
+	height:185vh;
+	overflow: hidden;
+}
+.AppInnerSection{
+	background: rgba(0, 0, 0, 0.1);	
+	position: absolute;
+	left: 210px;
+	top: .5px;
+	width: 100%;
+	height: 100%;
+}
+
+.AppMainDiv{
+	height: 97%;
+	width: 75%;
+	position: absolute;
+	top: 50%;
+	left: 42%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	background: #65D9E9  ;
+	border: 1px dotted black;
+	align-items: center;
+}
+.AppMainDiv .AppFirstDiv img{
+	width: 100%;
+	height: 140px;
+	
+	background: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.AppMainDiv .Error{
+	font-size: 14px;
+	position: absolute;
+	top: -20px;
+	background: black;
+	color: white;
+	letter-spacing: 1.5px;
+	padding: 5px 30px;
+	border-radius: 6px;
+	border-left: 10px solid red;
+	border-right: 10px solid red;
+}
+.AppMainDiv .SuccessMSG{
+	font-size: 9px;
+	position: absolute;
+	top: -20px;
+	background: black;
+	color: white;
+	letter-spacing: 1.5px;
+	padding: 5px 30px;
+	border-radius: 6px;
+	border-left: 10px solid red;
+	border-right: 10px solid red;
+}
+
+.AppReuired p{
+	font-size: 12px;
+	letter-spacing: .5px;
+}
+.AppReuired p span{
+	color: red;
+	font-size: 18px;
+}
+.AppMainDiv2{
+	width: 100%;
+	height: 400px;
+}
+.InnerAppMainDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 97%;
+}
+.InnerAppMainDiv1{
+	padding: 15px 0px;
+}
+.Apph2 h3{
+	font-size: 16px;
+	color: black;
+	letter-spacing: 2px;
+	position: relative;
+}
+.Apph2 h3::after{
+	position: absolute;
+	content: '';
+	background: red;
+	width:36px;
+	height: 4px;
+	top: 22px;
+	left: 0px;
+	border-radius: 8px;
+}
+
+.InnerAppMainDiv1{
+	display: flex;
+	flex-direction: column;
+}
+.InnerAppMainDiv1>div{
+	padding: 10px 0px;
+}
+.divtable1 table{
+	width: 75%;
+	border-spacing: 10px 5px;
+}
+.divtable1 table tr td input{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+.divtable1 table tr td input:focus{
+	border: solid 2px red;
+}
+.divtable1 table tr th{
+	text-align: left;
+	font-weight: normal;
+}
+.Innerdivtable1{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.leftInnerdivtable1 table{
+	width: 100%;
+	border-spacing: 10px 5px;
+}
+.leftInnerdivtable1 table tr td input{
+	width: 80%;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+.leftInnerdivtable1 table tr td input:focus{
+	border: solid 2px red;
+}
+.leftInnerdivtable1 table tr th{
+	text-align: left;
+	font-weight: normal;
+}
+.RightInnerdivtable1{
+
+}
+.Innertable1{
+	width: 50%;
+}
+.Submit{
+	text-align: center;
+}
+.Submit input{
+	background: transparent;color: white;
+	background: linear-gradient(to left,orange,red);
+	padding: 10px 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	transition: .2s linear;
+}
+.Submit input:hover{
+	opacity: .8;
+}
+@media(max-width: 830px){
+	.AppSection{
+	position: relative;
+	width:100%;
+	height:146vh;
+	overflow: hidden;
+}
+.AppInnerSection{
+	left: 0px;
+	top: .5px;
+	width: 100%;
+	height: 100%;
+
+}
+
+.AppMainDiv{
+	height: 100%;
+	width: 75%;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	
+}
+}
+@media(max-width: 600px){
+	.AppInnerSection{
+	left: 0px;
+	top: .5px;
+	width: 100%;
+	height: 100%;
+
+}
+	.AppSection{
+	position: relative;
+	width:100%;
+	height:198vh;
+	overflow: hidden;
+}
+	.AppMainDiv2{
+	width: 100%;
+	height: 400px;
+}
+.InnerAppMainDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 97%;
+}
+.InnerAppMainDiv1{
+	padding: 15px 0px;
+}
+.Apph2 h3{
+	font-size: 16px;
+	color: black;
+	letter-spacing: 2px;
+	position: relative;
+}
+.Apph2 h3::after{
+	position: absolute;
+	content: '';
+	background: red;
+	width:36px;
+	height: 4px;
+	top: 22px;
+	left: 0px;
+	border-radius: 8px;
+}
+
+.InnerAppMainDiv1{
+	display: flex;
+	flex-direction: column;
+}
+.InnerAppMainDiv1>div{
+	padding: 12px 0px;
+}
+.divtable1 table{
+	width: 75%;
+	border-spacing: 0px 5px;
+}
+.divtable1 table tr td input{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+.divtable1 table tr td input:focus{
+	border: solid 2px red;
+}
+.divtable1 table tr th{
+	text-align: left;
+	font-weight: normal;
+}
+.Innerdivtable1{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	width: 100%;
+}
+.leftInnerdivtable1 table{
+	width: 100%;
+	border-spacing: 0px 5px;
+}
+.leftInnerdivtable1 table tr td input{
+	width: 80%;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+.leftInnerdivtable1 table tr td input:focus{
+	border: solid 2px red;
+}
+.leftInnerdivtable1 table tr th{
+	text-align: left;
+	font-weight: normal;
+}
+.RightInnerdivtable1{
+
+}
+.Innertable1{
+	width: 50%;
+}
+.Submit{
+	
+	text-align: center;
+}
+.Submit input{
+	background: transparent;color: white;
+	background: linear-gradient(to left,orange,red);
+	padding: 10px 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	transition: .2s linear;
+}
+.Submit input:hover{
+	opacity: .8;
+}
+}

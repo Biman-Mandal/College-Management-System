@@ -1,0 +1,16 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.lol2 img{
+  
+    width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(img15.jpg);
+   
+    bottom: 0;
+
+}
