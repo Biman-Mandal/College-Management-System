@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PortalDataTable extends Migration
+class CreatePortalDatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class PortalDataTable extends Migration
      */
     public function up()
     {
-        Schema::create('portaldatas', function (Blueprint $table) {
+        Schema::create('portal_datas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('FirstName');
             $table->string('lastName');
@@ -39,8 +39,6 @@ class PortalDataTable extends Migration
             $table->string('country');
             $table->string('Permanentaddress');
             $table->string('POO');
-
-
             $table->string('Percityvill');
             $table->string('Perpincode');
             $table->string('Percountry');
@@ -53,7 +51,6 @@ class PortalDataTable extends Migration
             $table->string('Xmath');
             $table->string('Xscience');
             $table->string('Xcomapp');
-            
             $table->string('XIIexamination');
             $table->string('XIIpassing');
             $table->string('XIIstandard');
@@ -89,6 +86,6 @@ class PortalDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('portaldatas');
+        Schema::dropIfExists('portal_datas');
     }
 }

@@ -17,7 +17,7 @@ class DatabseLoginTable extends Migration
              $table->increments('id');
             $table->string('DatabaseUsername');
             $table->string('DatabasePassword');
-            $table->string('DatabaseRetypePassword');
+            $table->string('DatabaseRetypePassword')->nullable();
             $table->timestamps();
         });
     }

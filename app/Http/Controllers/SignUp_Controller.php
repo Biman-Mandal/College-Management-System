@@ -37,7 +37,7 @@ class SignUp_Controller extends Controller
      */
     public function store(Request $request)
     {
-         
+
         $validator = Validator::make($request->all(), [ // <---
             'Password' => 'min:6|required_with:PageRetypePassword|same:PageRetypePassword',
             'PageRetypePassword' => 'min:6',
@@ -51,8 +51,6 @@ class SignUp_Controller extends Controller
                     ->withErrors($validator)
                     ->withInput();
           }
-            echo "<pre>";
-            echo "<br>";
             $user=$request->input();
             $Pass=$request->input('Password');
                 $hashed = Hash::make($Pass, [
@@ -61,11 +59,9 @@ class SignUp_Controller extends Controller
             echo "<pre>";
             echo $hashed;
             $user['Password']=$hashed;
+            $user['RetypePassword']=$hashed;
             $user=new profile($user);
-            // $Pass=$hashed;
             $user->save();
-            print_r($user);
-           
         return redirect('ApplyOnline')
         ->with('success','Your account has been created successfully');
     }
@@ -115,12 +111,12 @@ class SignUp_Controller extends Controller
                     return back()->withErrors('Invalid Password');
                 }
            }
-           
+
         }
     }
      public function Logout(Request $request)
-    {   
-        
+    {
+
          Auth::logout();
          return redirect('/');
     }

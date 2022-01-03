@@ -32,10 +32,10 @@ class NewStudent_Controller extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(Request $request)
-    {   
+    {
         ini_set('memory_limit','256M');
         // echo "<pre>";
         // print_r($request->all());

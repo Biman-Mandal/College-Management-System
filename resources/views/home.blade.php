@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
+
 </head>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/Home/style2.css')}}">
  <link rel="stylesheet" type="text/css" href="{{ asset('css/Database/databse.css')}}">
@@ -21,13 +21,13 @@
     <div class="sectionOneRight">
     <h3><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></h3>
     <h3><a  href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></h3>
-    <h3><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></h3>
+    <h3><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></h3>
     <h3 ><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></h3>
     </div>
   </section>
   <div class="br"></div>
   <!-- //////////////////////////////////DatabasePopup home/new.css -->
-  <form method="post" action="{{route('DatabaseInsert')}}">
+  <form method="post" action="{{ url('DatabaseInsert') }}">
     @csrf
   <div id="DatabaseLoginPopup">
     <div class="innerDatabaseLoginPopup animate">
@@ -48,26 +48,26 @@
           <input type="Password" name="DatabasePassword" required>
           <label class="label1"><i class="fa fa-key" aria-hidden="true"></i></label>
           <label class="label2">Password</label>
-        </div> 
+        </div>
         <div class="ThirdDiv">
         <input type="submit" value="Submit">
-      </div>      
       </div>
-      
+      </div>
+
     </div>
     </div>
   </form>
-    
-  
+
+
    <!--///////////////////////////// Section2(header1.css)//////////////////////////-->
 
 <section class="sectionTwo">
   <div class="sectionTwoLeft">
-    <h3><img src="css/photos/tih.jpg"/></h3>
+    <h3><img src="css/photos/tih.jpg" alt="tih"/></h3>
     <h3 class="technoLogo"><a href="/">TECHNO INDIA HOOGHLY</a></h3>
   </div>
   <div class="sectionTwoRight">
-     <h5><a href="/StudentPotal" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Student Portal</a></h5>
+     <h5><a href="{{ url('student-portal')}} " target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Student Portal</a></h5>
      <!-- href="/Database" -->
      <h5 style="cursor: pointer;"><a onclick="DatabaseLogin()"><i class="fa fa-id-card-o" aria-hidden="true"></i>Database</a></h5>
      <h5><a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i>Generate Id</a></h5>
@@ -116,7 +116,7 @@
            <li><a href="/">Home</a></li>
            <li><a href="#">Academics</a>
               <ul>
-                <li><a href="#">Units<span class="fa fa-chevron-circle-right fa-right"></span></a>        
+                <li><a href="#">Units<span class="fa fa-chevron-circle-right fa-right"></span></a>
                     <ul>
                         <li><a href="#">BCA</a></li>
                         <li><a href="#">BBA</a></li>
@@ -144,14 +144,14 @@
         <li><a href="#">Training&Placement</a></li>
         <li><a href="/Principal">Principal's Desk</a></li>
         <li><a href="/AboutPage">About Us</a></li>
-        
+
    </ul>
 </nav>
 </div>
 
 </div>
 
-<!-- 
+<!--
 <div class="middle">
       <button class="btn btn1"><i class="fa fa-book" aria-hidden="true"></i>Apply</button>
     </div>
@@ -223,7 +223,7 @@ technohooghly@gmail.com</p></li>
     <div class="social_medea">
 <a href="#"><i  class="fa fa-facebook" aria-hidden="true"></i></a>
 <a  href="#"><i  class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href="#"><i  class="fa fa-twitter" aria-hidden="true"></i></i></a>
+<a href="#"><i  class="fa fa-twitter" aria-hidden="true"></i></a>
 <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
     </div>
     </div>

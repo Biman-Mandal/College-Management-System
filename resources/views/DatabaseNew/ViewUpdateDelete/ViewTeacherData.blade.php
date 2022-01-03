@@ -10,9 +10,6 @@
 		</div>
 		@if($errors->any())
 	 	@foreach($errors->all() as $error)
-	 	
-	 				
-	 			
 		<div class="ErrorSection" id="ErrorSectionID" onclick="CloseError()">
 			<div class="InnerErrorSection">
 				<div class="SecondInnerError">
@@ -21,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		@endforeach
 	   @endif
 	   @if ($message = Session::get('success') )

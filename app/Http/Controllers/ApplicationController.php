@@ -18,17 +18,16 @@ class ApplicationController extends Controller
      */
     public function index()
     {
-        
+
     }
      public function profile(application $Application)
-    {   
-     
+    {
         $Email=Session::get('Email');
         $user=$Application::where("Email",$Email)->get();
         $img=$user[0]['StudentImg'];
         // print_r($user);
         return view('Apply.Application-Profile')->with('Image',$img);
-                                                
+
     }
     public function profileAction($id,profile $Profile,Request $request){
         echo "<pre>";
@@ -85,7 +84,7 @@ class ApplicationController extends Controller
                     ->withErrors($validator)
                     ->withInput();
           }else{
-        // 
+        //
         // $Data=$request->input();
         $AllData=$request->all();
         $Image=$request->file('StudentImg');
@@ -109,11 +108,11 @@ class ApplicationController extends Controller
              move_uploaded_file($path,'StoredImages/'.$new_name);
              return redirect('/Application')
              ->with('success','Application Form Data Has Been Submitted Successfully');
-         } 
          }
-         
-        
-       
+         }
+
+
+
     }
 
     /**
@@ -152,9 +151,9 @@ class ApplicationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request ,$id)
-    {   
+    {
         $DB=new application;
-        $user=$DB::find($id);   
+        $user=$DB::find($id);
         $user->Course=$request->input('Course');
         $user->Firstname=$request->input('Firstname');
         $user->Lastname=$request->input('Lastname');

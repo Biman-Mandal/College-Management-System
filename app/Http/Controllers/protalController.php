@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 use Crypt;
 use Auth;
-use App\portal;
+use App\Portal;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class protalController extends Controller
 {
@@ -38,32 +41,32 @@ class protalController extends Controller
     {
        /* print_r($request->all());
         exit();*/
-        $user=new portal;
+        $user=new Portal;
         $user->UniversityRoll=$request->input('UniversityRoll');
         $user->Password=Crypt::encrypt($request->input('Password'));
         $user->Name=$request->input('Name');
         $user->MoblileNumber=$request->input('MoblileNumber');
         $user->Email=$request->input('Email');
         $user->Depertment=$request->input('Depertment');
-        
+
         // $DBemail=$user->Email;
         // $DBinputEmail=$user->Email=$request->input('Email');
         $user->save();
         return view('StudentPortal.RegisterJS');
-        
+
         // if ($DBemail==$DBinputEmail) {
         //  return redirect('/Registration')
         //  ->with('Error','Same email Address Can not be stored');
         // }elseif ($DBemail!=$DBinputEmail) {
-        //     
+        //
         // }
-        
+
     }
     public function Login(Request $request)
     {
          /*print_r($request->all());
         exit();*/
-        $user=portal::where("Email",$request->input("Email"))->get();
+        $user=Portal::where("Email",$request->input("Email"))->get();
         $user[0]->Password;
         $user[0]->Email;
         $UserEmail=$user[0]->Email;
@@ -73,7 +76,7 @@ class protalController extends Controller
             //Put('SessionName->Session Value.. We can acces the table value from this also')
                /*$request->Session()->put('user',$request->input('LoginEmail'));
                $request->Session()->put('city',$city);*/
-                return view('StudentPortal.LoginJs');
+                return redirect('/portals');
             }else{
                 return redirect('/StudentPotal');
             }
@@ -82,10 +85,10 @@ class protalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\portal  $portal
-     * @return \Illuminate\Http\Response
+     * @param Portal $portal
+     * @return Application|Factory|View
      */
-    public function show(portal $portal)
+    public function show(Portal $portal)
     {
         $Data=$portal->get();
         return view('DatabaseNew/ViewUpdateDelete/ViewPortalProfile')->with('PortalDataP',$Data);
@@ -94,10 +97,10 @@ class protalController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\portal  $portal
+     * @param Portal $portal
      * @return \Illuminate\Http\Response
      */
-    public function edit(portal $portal)
+    public function edit(Portal $portal)
     {
         //
     }
@@ -106,10 +109,10 @@ class protalController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\portal  $portal
+     * @param Portal $portal
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, portal $portal)
+    public function update(Request $request, Portal $portal)
     {
         //
     }
@@ -117,10 +120,10 @@ class protalController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\portal  $portal
+     * @param Portal $portal
      * @return \Illuminate\Http\Response
      */
-    public function destroy(portal $portal,$id)
+    public function destroy(Portal $portal, $id)
     {
         $Data=$portal->find($id);
           // print_r($Data);

@@ -40,13 +40,11 @@ class DatabaseLoginController extends Controller
      */
     public function store(Request $request)
     {
-        echo "<pre>";
         $Data=$request->input();
         $Pass=$request->input('DatabasePassword');
         $hashed = Hash::make($Pass, [
                         'rounds' => 14,
                     ]);
-        // echo $hashed;
         $Data['DatabasePassword']=$hashed;
         $user=new database($Data);
         $user->save();
@@ -54,13 +52,13 @@ class DatabaseLoginController extends Controller
     }
     public function LoginCheck(Request $request)
     {
-        
+
         // print_r($request->all());
         $obj=new database;
         $user=$obj::where("DatabaseUsername",$request->input("DatabaseUsername"))->get();
         $InputEmail=$request->input('DatabaseUsername');
         $InputPassword=$request->input('DatabasePassword');
-       
+
         if ($user->isEmpty()) {
            return redirect('/');
         }else{
@@ -76,13 +74,6 @@ class DatabaseLoginController extends Controller
                 return redirect('/');
              }
         }
-        // $user['DatabaseUsername'];
-        exit();
-
-        
-
-
-
     }
 
     /**

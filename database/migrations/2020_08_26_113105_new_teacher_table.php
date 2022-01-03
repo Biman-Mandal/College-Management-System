@@ -15,44 +15,40 @@ class NewTeacherTable extends Migration
     {
         Schema::create('NewTeachers', function (Blueprint $table) {
             $table->increments('id');
-            // 
             $table->string('TeacherFirstname');
             $table->string('TeacherLastname');
             $table->string('TeacherAddress');
             $table->string('TeacherDistrict');
-            // 
             $table->string('TeacherGender');
             $table->string('TeacherLandlineNo');
             $table->string('TeacherMobileNumber');
             $table->string('TeacherEmail')->unique();
-            // 
             $table->string('TeacherState');
             $table->string('TeacherDateOfBirth');
             $table->string('TeacherImage');
-            $table->string('TeacherBiodata');
-            // 
+            $table->string('TeacherBiodata')->nullable();
             $table->string('TeacherDegreeOne');
             $table->string('TeacherDegreeTwo');
             $table->string('TeacherDegreeThree');
-            // 
+            //
             $table->string('TeacherExprienceOne');
             $table->string('TeacherCompanyNameOne');
             $table->string('TeacherPositionOne');
             $table->string('TeacherExpriencetwo');
             $table->string('TeacherCompanyNametwo');
             $table->string('TeacherPositiontwo');
-            // 
+            //
             $table->string('TeacherSubjectOne');
             $table->string('TeacherSubjectTwo');
             $table->string('TeacherSubjectThree');
             $table->string('TeacherSubjectFour');
             $table->string('TeacherCollegePosition');
-            // 
+            //
             $table->string('TeacherOtherActOne');
             $table->string('TeacherOtherActTwo');
             $table->string('TeacherAtFileOne');
             $table->string('TeacherAtFileTwo');
-            // 
+            //
             $table->timestamps();
         });
     }

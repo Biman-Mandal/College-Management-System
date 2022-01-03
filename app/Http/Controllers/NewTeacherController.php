@@ -36,8 +36,8 @@ class NewTeacherController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   
-       
+    {
+
          // echo "<pre>";
          // $Data=$request->all();
          // print_r($Data);
@@ -52,8 +52,6 @@ class NewTeacherController extends Controller
           }else{
             echo "<pre>";
             $Data=$request->all();
-            // print_r($Data);
-            // Image File
         $Image=$request->file('TeacherImage');
         $Imagename=$request->file('TeacherImage')->getClientOriginalName();
         $Imagepath=$request->TeacherImage->path();
@@ -81,7 +79,7 @@ class NewTeacherController extends Controller
         $obj=new newteacher($Data);
         // echo "<br>";
         if ($StoreImage && $StoreFile1 && $StoreFile2 && $obj) {
-         
+
            $obj->save();
            return redirect('/Database')->with('success','Data Submitted Successfuly');
         }else{

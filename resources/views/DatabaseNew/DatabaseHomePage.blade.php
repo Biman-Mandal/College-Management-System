@@ -12,9 +12,6 @@
 		<!-- StyleDemo1.css -->
 		@if($errors->any())
 	 	@foreach($errors->all() as $error)
-	 	
-	 				
-	 			
 		<div class="ErrorSection" id="ErrorSectionID" onclick="CloseError()">
 			<div class="InnerErrorSection">
 				<div class="SecondInnerError">
@@ -23,7 +20,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		@endforeach
 	   @endif
 	   @if ($message = Session::get('success') )
@@ -210,7 +207,7 @@
 		</div>
 	</section>
 
-	
+
 
 
 
@@ -225,17 +222,17 @@
 
 
 <!-- Insert Form Student -->
-	
-	
+
+
 
 	<section class="DataStuInsSecP  AnimateDataForm DataStuInsSecD" id="InsertStudentId">
-		
+
 		<div class="InDataStuInsSec">
 			<div class="Cross" onclick="InsertCurrentStudentCross()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="FormLogo">
-				
+
 			</div>
 			<div class="FormData">
 				<!-- Heading -->
@@ -275,10 +272,10 @@
 						</table>
 						</div>
 					<div>
-						
+
 					</div>
 					<div>
-						
+
 					</div>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
@@ -305,7 +302,7 @@
 								<th>Email</th>
 								<td><input type="Email" name="Email" required="required"></td>
 							</tr>
-							
+
 						</table>
 					</div>
 					<div class="TableDesign">
@@ -326,7 +323,7 @@
 					</div>
 					<div>
 						<table>
-							
+
 						</table>
 					</div>
 				</div>
@@ -381,7 +378,7 @@
 					</div>
 					<div>
 						<table>
-							
+
 						</table>
 					</div>
 				</div>
@@ -409,7 +406,7 @@
 									<th>Year of Passing</th>
 									<td>
 										<select name="Passing10thYear">
-											
+
 											<option value="10thPassing-year-2017">2017</option>
 											<option value="10thPassing-year-2016">2016</option>
 											<option value="10thPassing-year-2015">2015</option>
@@ -463,7 +460,7 @@
 											<option value="Commerce">Commerce</option>
 											<option value="Arts">Arts</option>
 											<option value="Echo-Science">Echo-Science</option>
-											
+
 										</select>
 									</td>
 								</tr>
@@ -512,7 +509,7 @@
 											<option value="12thPassing-year-2002">2002</option>
 											<option value="12thPassing-year-2001">2001</option>
 											<option value="12thPassing-year-2000">2000</option>
-											
+
 
 										</select>
 									</td>
@@ -520,7 +517,7 @@
 							</table>
 					</div>
 					<div>
-						
+
 					</div>
 				</div>
 				<div class="SubmitDesign">
@@ -539,13 +536,13 @@
 
 
 	<section class="DataStuInsSecP AnimateDataForm DataTeacherInsSecD"	id="InsertTeacherId" >
-		
+
 		<div class="InDataTeacherInsSec">
 			<div class="Cross AnimateDataForm" onclick="InsertTeacherCross()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="FormLogo">
-				
+
 			</div>
 			<div class="FormData">
 				<!-- Heading -->
@@ -573,10 +570,10 @@
 						</table>
 						</div>
 					<div>
-						
+
 					</div>
 					<div>
-						
+
 					</div>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
@@ -603,7 +600,7 @@
 								<th>Email</th>
 								<td><input type="text" name="TeacherEmail"></td>
 							</tr>
-							
+
 						</table>
 					</div>
 					<div class="TableDesign">
@@ -620,12 +617,12 @@
 								<th>Upload Image</th>
 								<td><input type="file" name="TeacherImage"></td>
 							</tr>
-							
+
 						</table>
 					</div>
 					<div>
 						<table>
-							
+
 						</table>
 					</div>
 				</div>
@@ -633,7 +630,7 @@
 					<h3>Education</h3>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
-					
+
 						<div class="TableDesign">
 							<table>
 								<tr>
@@ -678,10 +675,10 @@
 							</table>
 						</div>
 						<div>
-							
+
 						</div>
 						<div>
-							
+
 						</div>
 
 
@@ -690,7 +687,7 @@
 					<h3>Others</h3>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
-					
+
 						<div class="TableDesign">
 							<table>
 								<tr>
@@ -764,10 +761,10 @@
 							</table>
 						</div>
 						<div>
-							
+
 						</div>
 						<div>
-							
+
 						</div>
 				</div>
 				<div class="SubmitDesign">
@@ -783,13 +780,13 @@
 <!-- Class Alloted Insert Section -->
 
 	<section class="DataStuInsSecP AnimateDataForm DataTeacherInsSecD"	id="AllotIdDatabseSection" >
-		
+
 		<div class="InDataAllotedInsSec">
 			<div class="Cross AnimateDataForm" onclick="ClassAllotedCross()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="FormLogo">
-				
+
 			</div>
 				<form method="post" enctype="multipart/form-data" action="{{route('AllotedDataInsert')}}">
 					@csrf
@@ -799,12 +796,12 @@
 						<h3>Class Alloted </h3>
 					</div>
 					<div class="AllotedForm AllotedFormDesign">
-					
+
 							<table class="AllotedTable">
 							<tr>
 								<th>Teacher Name</th>
 							</tr>
-							
+
 							<tr>
 								<td>
 									<select name="ATName">
@@ -817,7 +814,7 @@
 									</select>
 								</td>
 							</tr>
-							
+
 							<tr>
 								<th>Choose Subject</th>
 							</tr>
@@ -863,8 +860,8 @@
 								<td><input type="date" name="AEnddata"></td>
 							</tr>
 							</table>
-					
-						
+
+
 					</div>
 					<div class="SubmitBtn">
 						<input type="submit" value="Submit">
@@ -885,13 +882,13 @@
 <!-- Employee Data Insert Form -->
 
 	<section class="DataStuInsSecP AnimateDataForm DataTeacherInsSecD" id="EmployeeInsertId" >
-		
+
 		<div class="InDataTeacherInsSec">
 			<div class="Cross AnimateDataForm" onclick="InsertEmoplyeeCross()">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="FormLogo">
-				
+
 			</div>
 			<div class="FormData">
 				<!-- Heading -->
@@ -899,7 +896,7 @@
 					<h3>Personal Info</h3>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
-					 <form method="post" enctype="multipart/form-data" action="{{route('EmployeDataInsert')}}"> 
+					 <form method="post" enctype="multipart/form-data" action="{{route('EmployeDataInsert')}}">
 						@csrf
 						<div class="TableDesign">
 						<table>
@@ -919,10 +916,10 @@
 						</table>
 						</div>
 					<div>
-						
+
 					</div>
 					<div>
-						
+
 					</div>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
@@ -949,7 +946,7 @@
 								<th>Email</th>
 								<td><input type="Email" name="EmployeEmail"></td>
 							</tr>
-							
+
 						</table>
 					</div>
 					<div class="TableDesign">
@@ -966,12 +963,12 @@
 								<th>Upload Image</th>
 								<td><input type="file" name="EmployeImage"></td>
 							</tr>
-							
+
 						</table>
 					</div>
 					<div>
 						<table>
-							
+
 						</table>
 					</div>
 				</div>
@@ -979,7 +976,7 @@
 					<h3>Education</h3>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
-					
+
 						<div class="TableDesign">
 							<table>
 								<tr>
@@ -1024,10 +1021,10 @@
 							</table>
 						</div>
 						<div>
-							
+
 						</div>
 						<div>
-							
+
 						</div>
 
 
@@ -1036,7 +1033,7 @@
 					<h3>Others</h3>
 				</div>
 				<div class="PositionForms SecondPartOfForm">
-					
+
 						<div class="TableDesign">
 							<table>
 								<tr>
@@ -1062,10 +1059,10 @@
 							</table>
 						</div>
 						<div>
-							
+
 						</div>
 						<div>
-							
+
 						</div>
 				</div>
 				<div class="SubmitDesign">
