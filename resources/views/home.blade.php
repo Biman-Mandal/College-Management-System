@@ -27,7 +27,7 @@
   </section>
   <div class="br"></div>
   <!-- //////////////////////////////////DatabasePopup home/new.css -->
-  <form method="post" action="{{ url('DatabaseInsert') }}">
+  <form method="post" action="{{ url('database-login') }}">
     @csrf
   <div id="DatabaseLoginPopup">
     <div class="innerDatabaseLoginPopup animate">
@@ -102,8 +102,8 @@
 
       </div>
       <a href="#">Training&Placement</a>
-      <a href="/Principal">Principal's Desk</a>
-      <a href="/AboutPage">About Us</a>
+      <a href="{{ url('principal-desk') }}">Principal's Desk</a>
+      <a href="{{ url('about-page') }}">About Us</a>
   </div>
 </div>
 </section>
@@ -141,11 +141,11 @@
             <li><a href="#">Instraction</a></li>
           </ul>
        </li>
-        <li><a href="#">Training&Placement</a></li>
-        <li><a href="/Principal">Principal's Desk</a></li>
-        <li><a href="/AboutPage">About Us</a></li>
-
-   </ul>
+        <li>
+        <li><a href=""><a href="#">Training&Placement</a></li>
+        <li><a href="{{ url('principal-desk') }}">Principal's Desk</a></li>
+        <li><a href="{{ url('about-page') }}">About Us</a></li>
+       </ul>
 </nav>
 </div>
 

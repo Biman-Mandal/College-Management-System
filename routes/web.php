@@ -5,19 +5,21 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['web'])->group(function () {
 // Home
     Route::view('/', 'homepage');
-    Route::view('/Principal', 'PrincipalDesk');
-    Route::view('/AboutPage', 'About');
+    Route::view('/principal-desk', 'PrincipalDesk');
+    Route::view('/about-page', 'About');
 // Student Portal
     Route::post('student-portal/login', 'PortalController@login');
     Route::resource('portal-data-registrations','PortalDataController');
     Route::resource('student-portal','PortalController');
     Route::get('/DeletePPData/{id}','protalController@destroy');
+
+//    Database
+    Route::post('/database-login','DatabaseLoginController@LoginCheck');
+
 //    due
     Route::get('ApplicationPotal','PortalDataCntroller@show');
     Route::get('/DeletePortalApplication/{id}','PortalDataCntroller@destroy');
-    // Login
-    Route::post('/DatabaseInsert','DatabaseLoginController@LoginCheck');
-    Route::view('/Database', 'DatabaseNew/DatabaseHomePage');
+
     Route::view('/Database', 'DatabaseNew/DatabaseHomePage');
 //
 // Logout
