@@ -1,21 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// Web Middleware
+    // Web Middleware
 Route::middleware(['web'])->group(function () {
-// Home
+    // Home
     Route::view('/', 'homepage');
     Route::view('/principal-desk', 'PrincipalDesk');
     Route::view('/about-page', 'About');
-// Student Portal
+    // Student Portal
     Route::post('student-portal/login', 'PortalController@login');
     Route::resource('portal-data-registrations','PortalDataController');
     Route::resource('student-portal','PortalController');
     Route::get('/DeletePPData/{id}','protalController@destroy');
 
-//    Database
+    // Database
     Route::post('/database-login','DatabaseLoginController@LoginCheck');
 
+    // Database login detail insert
+    Route::view('/database-demo-inset', 'database_insert');
+    Route::post('/database-insert', 'DatabaseLoginController@store');
+    //    End Database login detail insert
 //    due
     Route::get('ApplicationPotal','PortalDataCntroller@show');
     Route::get('/DeletePortalApplication/{id}','PortalDataCntroller@destroy');
